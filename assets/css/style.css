@@ -8,15 +8,16 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 18px;
     line-height: 150%;
     color: #ff6289;
     Background: #fff0f3;
 }
 
+/* Header */
 header {
-    padding: 20px 35px;
+    padding: 20px 0px;
     margin: 0px;
     margin-bottom: 30 px;
     font-size: 28px;
@@ -24,12 +25,48 @@ header {
     background: var(--dark);
     display: flex;
     justify-content: space-between;
-    fex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
+/* Amber Straka */
 h1 {
     background-color: var(--tertiary-color);
-    padding: 10px 10px 0px 10px;
+    padding: 10px 10px 10px 10px;
     vertical-align: center;
 }
 
+/* Header Nav */
+header nav {
+    margin: 7px 0;
+    padding: 0 30px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    color: var(--tertiary-color);
+    padding: 0 10px;
+}
+
+.hero {
+    background-image: url("../images/pinkclouds.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    min-height:250px;
+}
+
+.hero-subtitle {
+    color: var(--dark);
+}
+
+.about img {
+    height: 200px;
+}
