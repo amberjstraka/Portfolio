@@ -1,14 +1,34 @@
+:root {
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #ff6289;
+    --dark: #333333;
+  }
+
 body {
     padding: 0;
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
     line-height: 150%;
-    color: #fc3468;
+    color: #ff6289;
     Background: #fff0f3;
 }
 
 header {
-    background: #333333;
+    padding: 15px 0;
+    margin: 0px;
+    margin-bottom: 30 px;
+    font-size: 28px;
+    color: var(--dark);
+    background: var(--dark);
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    background-color: var(--tertiary-color);
+    padding: 10px 10px 0px 10px;
+    vertical-align: center;
 }
 
