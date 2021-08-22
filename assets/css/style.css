@@ -16,14 +16,15 @@ body {
 }
 
 header {
-    padding: 15px 0;
+    padding: 20px 35px;
     margin: 0px;
     margin-bottom: 30 px;
     font-size: 28px;
     color: var(--dark);
     background: var(--dark);
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    fex-wrap: wrap;
 }
 
 h1 {
