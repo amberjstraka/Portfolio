@@ -145,10 +145,21 @@ flex: 3;
    line-height: 1.1;
 }
 
+.first-project {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .run-buddy {
-    width: 65%;
-    flex: 3;
+    width: 200%;
     padding: 30px;
+}
+
+.Horiseon {
+    width:40%;
+    flex: 1;
 }
 
 
