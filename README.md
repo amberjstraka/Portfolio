@@ -10,3 +10,4 @@ A website that showcases who I am, and my projects.
 ## Website
 https://amberjstraka.github.io/Portfolio/
 
+![image](../images/Screenshot.png)
