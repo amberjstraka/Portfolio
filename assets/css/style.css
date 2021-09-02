@@ -5,7 +5,7 @@
     
   }
 
-body {
+  body {
     padding: 0;
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,17 +15,19 @@ body {
     Background: var(--secondary-color);
 }
 
-/* Header */
 header {
     padding: 0;
     margin: 0px;
     color: var(--primary-color);
-    background: var(--primary-color);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    background-image: url("../images/pinkclouds.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 /* Amber Straka */
@@ -38,7 +40,7 @@ h1 {
 /* Header Nav */
 header nav {
     margin: 7px 0;
-    padding: 0 30px;
+    padding: 20px 30px;
 }
 
 header nav ul {
@@ -64,6 +66,7 @@ header nav ul li a:hover {
     background-image: url("../images/pinkclouds.jpg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     margin: 0;
     min-height:250px;
     display: flex;
@@ -72,23 +75,11 @@ header nav ul li a:hover {
     flex-wrap: wrap;
 }
 
-.hero-subtitle {
-    color: var(--primary-color);
-    text-align: right;
-    margin: 20px 90px;
-    background-color: var(--tertiary-color);
-    line-height: 0.2;
-    padding: 0 6px 0 6px;
+.container h2 {
+    margin: 40px;
+    font-size: 50px;
+    border-bottom: 3px solid var(--tertiary-color);
 }
-
-/* Content */
-
-.content {
-    display: block;
-}
-
-
-/* About Me */
 
 .about-me {
     display: flex;
@@ -102,143 +93,33 @@ header nav ul li a:hover {
 
 }
 
-.about-me h2 {
-    border-right: 3px solid var(--tertiary-color);
-    flex: 2;
-    margin: 0;
-    padding: 20px;
-   text-align: right;
-   font-size: 50px;
-   line-height: 1.1;
-    
-}
-
-.about-me-info {
-    display: flex;
-    align-items: center;
-    padding: 0 0 0 60px;
-}
-
 .about-me img {
-    height: 125px;
-    flex: 1;
-    margin: 0 30px 0 30px; 
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 40px;
 }
 
-.about-me-text {
-flex: 3;
-
+.card-img {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
 }
 
-/* Work */
-.work {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    align-items: stretch;
-    padding: 20px;
-    margin: 0 20px 0 10px;
+.card {
+    opacity: 75%;
 }
 
-.work h2 {
-    border-right: 3px solid var(--tertiary-color);
-    flex: 1;
-    margin: 0 0 0 ;
-    padding: 100px 10px 100px 0 ;
-   text-align: right;
-   font-size: 50px;
-   line-height: 1.1;
+.card:hover {
+    opacity: 100%;
 }
 
-.flex-box {
-    flex: 2 70%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+a {
+    color: var(--tertiary-color);
 }
 
-.run-buddy {
-    width: 63.55%;
-    padding: 0 0 0 90px;
-    align-items: center;
-    opacity: 60%;
+a:hover {
+    color: var(--tertiary-color);
 }
-
-.Horiseon {
-    width:30%;
-    padding: 0 0 0 90px;
-    flex: 1;
-    opacity: 60%;
-}
-
-.coming-soon {
-    width:33.35%;
-    padding: 0;
-    opacity: 60%;
-}
-
-.run-buddy:hover {
-    opacity: 100;
-}
-
-.Horiseon:hover {
-    opacity: 100;
-}
-
-.coming-soon:hover {
-    opacity: 100;
-}
-
-
-
-/* Titles on work Images */
-.first-project {
-    position: relative;
-  }
-  
-  
-  .runbuddy {
-    position: absolute;
-    top: 20px;
-    left: 90px;
-    background-color: var(--tertiary-color);
-    color: var(--primary-color);
-    padding-left: 20px;
-    padding-right: 20px;
-    line-height: .25;
-    font-size: 15px;
-  }
-
-.following-projects {
-        position: relative;
-      }
-      
-     
-      .horiseonimage {
-        position: absolute;
-        top: 20px;
-        left: 90px;
-        background-color: var(--tertiary-color);
-        color: var(--primary-color);
-        padding-left: 20px;
-        padding-right: 20px;
-        line-height: .25;
-        font-size: 15px;
-      }
-
-      .coming {
-        position: absolute;
-        top: 20px;
-        left: 588px;
-        background-color: var(--tertiary-color);
-        color: var(--primary-color);
-        padding-left: 20px;
-        padding-right: 20px;
-        line-height: .25;
-        font-size: 15px;
-
-      }
 
 /* Contact Me */
 
@@ -247,27 +128,12 @@ flex: 3;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    align-items: stretch;
-    align-items: center;
     padding: 20px;
     margin: 0 20px 0 0;
 }
 
-.contact h2 {
-    border-right: 3px solid var(--tertiary-color);
-    flex: 1;
-    margin: 0;
-    padding: 10px;
-   text-align: right;
-   font-size: 50px;
-   line-height: 1.1;
-}
-
 .contact a {
     color: var(--tertiary-color);
-    flex: 3;
-    margin: 0 0 0 40px;
-    padding: 0 0 0 50px;
 }
 
 .contact a:hover {
@@ -275,3 +141,10 @@ flex: 3;
     color: var(--primary-color);
     border-radius: 15px;
 }
+
+@media screen and (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
